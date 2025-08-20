@@ -1,0 +1,294 @@
+:root {
+  --verde: #78cc42;
+  --verde-oscuro: #4CAF50;
+  --marron: #512b10;
+  --blanco: #f5eeee;
+  --negro: #1d1b1b;
+  --gris: #bbb;
+  --gris-oscuro: #adadad;
+}
+ 
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  z-index: 11;
+  /*elementos por delante*/
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  /*desenfoque*/
+  text-align: justify;
+  background-color: var(--marron);
+  color: var(--verde);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.nav-link a {
+  color: var(--verde);
+    font-size: 20px;
+    font-weight: bolder;
+}
+.nav-link {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.navbar-logo {
+  display: inline-block;
+  vertical-align: middle;
+
+
+}
+
+.navbar-logo img {
+  display: block;
+  height: auto;
+  max-width: 150px;
+
+}
+
+@media (max-width: 768px) {
+  .img-fluida {
+    width: 100px;
+    /* Ajusta el ancho según tu preferencia */
+  }
+}
+
+.close {
+  color: red;
+}
+
+#element{
+  color: var(--marron);
+  font-size: 2.2rem;
+
+}
+#element2{
+  color: var(--marron);
+  font-size: 1.6rem;
+}
+
+#element3 {
+  height: 50px;
+  background-color: var(--verde);
+  color: var(--blanco);
+  font-size: 1.6rem;
+  margin-top: 50px;
+}
+
+#parrafo-inicio, #parrafo-inicio2, .frases {
+  color: var(--marron);
+  font-size: 1.2rem;
+
+}
+
+#frase-inicio {
+  height: 250px;
+}
+#frase-inicio2 {
+  height: 350px;
+}
+
+#frase-inicio3 {
+  height: 170px;
+}
+#parrafo-inicio {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+#parrafo-inicio2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.fondo-marron {
+  background-color: var(--marron);
+}
+
+.frases{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 1.5rem;
+
+}
+
+footer {
+  color: var(--blanco);
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*.bg-image {
+    background-image: url('img/logo/WhatsApp\ Image\ 2024-08-20\ at\ 2.07.37\ PM.jpeg');
+    background-size: cover;
+    background-position: center;
+    
+  }*/
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin:  20px;
+    font-size: 24px;
+    color: var(--verde);
+}
+
+.social-icons:hover a {
+  color: var(--verde-oscuro);
+}
+
+.margen {
+  margin-left:  0px;
+ 
+  
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: var(--verde);
+  color: var(--blanco);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button:hover {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: var(--blanco);
+  color: var(--verde);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.fab {
+  font-size: 24px;
+}
+
+form, .video-responsive{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid var(--marron);
+  border-radius: 10px;
+}
+
+#h1for{
+  margin: 0 auto;
+  padding: 20px;
+
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--marron);
+  
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  border: 2px solid var(--marron);
+  border-radius: 4px;
+}
+
+.buttonEnviar {
+  background-color: var(--verde);
+  color: var(var(--blanco));
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.buttonEnviar:hover {
+  background-color: #8eff94;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 400px;
+  /* Adecua este valor para controlar la altura del video */
+  position: relative;
+  height: 0;
+  
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.product-card {
+  border: 1px solid var(--verde);
+  padding: 20px;
+  width: 400px; /* Ajusta el ancho según tus necesidades */
+
+  margin: 10px;
+}
+
+.product-card h3 {
+  color: var(--marron);
+}
+.btn-whatsapp {
+  background-color: var(--verde-oscuro); /* Verde WhatsApp */
+  color: var(--blanco);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+#carousel {
+  width: 500px; 
+  overflow: hidden;
+}
+#slider {
+  width: 1500px; 
+  white-space: nowrap;
+}
+.slide {
+  width: 500px; 
+  display: inline-block;
+}
