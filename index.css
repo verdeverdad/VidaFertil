@@ -29,6 +29,13 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+
+/* Forzar el centrado absoluto */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .nav-link a {
   color: var(--verde);
     font-size: 20px;
@@ -89,7 +96,7 @@
 }
 
 #frase-inicio {
-  height: 250px;
+  height: 200px;
 }
 #frase-inicio2 {
   height: 350px;
@@ -169,8 +176,8 @@ a {
   background-color: var(--verde);
   color: var(--blanco);
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
