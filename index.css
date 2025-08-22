@@ -1,13 +1,15 @@
 :root {
   --verde: #78cc42;
   --verde-oscuro: #4CAF50;
-  --marron: #512b10;
+  --marron: #512b11;
   --blanco: #f5eeee;
   --negro: #1d1b1b;
   --gris: #bbb;
   --gris-oscuro: #adadad;
 }
- 
+ .navbar-collapse.show {
+  background-color: var(--marron) !important;
+ }
 .navbar {
   position: relative;
   display: -ms-flexbox;
@@ -30,12 +32,8 @@
 
 }
 
-/* Forzar el centrado absoluto */
-.nav-center {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
+
+
 .nav-link a {
   color: var(--verde);
     font-size: 20px;
